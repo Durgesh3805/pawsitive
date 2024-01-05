@@ -1,0 +1,66 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #141414;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-container {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+input {
+  width: 65%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #777;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #e50914;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none; /* Removed underlines */
+  display: inline-block; /* Add this to prevent the width from being affected by 100% */
+  outline: none; /* Add this to remove the default button outline */
+}
+
+button:hover {
+  background-color: #e50914; /* Keep the hover color the same as the background color */
+  text-decoration: none;
+}
+
+.login-link {
+  margin-top: 20px;
+  color: #b3b3b3;
+}
+
+.login-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="sign_up.css">
+</head>
+<body>
+
+  <div class="signup-container">
+    <div class="logo">
+      Pawsitive
+    </div>
+    <form id="signupForm">
+      <input type="text" id="signupName" name="signupName" placeholder="Name" required>
+      <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required>
+      <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+      <button type="button" id="signupsubmit">Sign up</button>
+    </form>
+    <div class="login-link">
+      <p>Already have an account? <a href="sign_in.html">Sign in</a>.</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signupsubmit').addEventListener('click', function() {
+      // Get form data
+      var name = document.getElementById('signupName').value;
+      var email = document.getElementById('signupEmail').value;
+      var password = document.getElementById('signupPassword').value;
+      var confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Check if all fields are filled
+      if (name && email && password && confirmPassword) {
+        // Check if password matches confirm password
+        if (password === confirmPassword) {
+          // Redirect to home.html
+          window.location.href = 'home.html';
+        } else {
+          alert('Password and Confirm Password must match.');
+        }
+      } else {
+        alert('Please fill in all the details.');
+      }
+    });
+  </script>
+
+</body>
+</html>
