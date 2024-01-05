@@ -51,7 +51,3 @@ We welcome contributions! Please follow our [Contribution Guidelines](CONTRIBUTI
 For any questions or concerns, please contact us at:
 - Email: durgesh3805@gmail.com
 
-Feel free to reach out if you have any inquiries or need further assistance!
-```
-
-Remember to replace placeholder information (such as project links, usernames, and contact details) with your actual project details. Additionally, consider creating separate files for contributing guidelines (`CONTRIBUTING.md`) and the license (`LICENSE`).
